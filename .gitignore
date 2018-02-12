@@ -1,0 +1,10 @@
+actionscript/.idea
+Main.iml
+project.properties
+build/temp
+demo_app
+.DS_STORE
+UserInterfaceState.xcuserstate
+bin
+ios/DeferSystemGestures.xcodeproj/project.xcworkspace/xcuserdata
+ios/DeferSystemGestures.xcodeproj/xcuserdata

@@ -1,0 +1,25 @@
+<extension xmlns="http://ns.adobe.com/air/extension/19.0">
+  <id>com.digitalstrawberry.ane.deferSystemGestures</id>
+  <versionNumber>1.0.0</versionNumber>
+  <platforms>
+     <platform name="iPhone-ARM">
+        <applicationDeployment>
+            <nativeLibrary>libDeferSystemGestures.a</nativeLibrary>
+            <initializer>DeferSystemGesturesInitializer</initializer>
+            <finalizer>DeferSystemGesturesFinalizer</finalizer>
+        </applicationDeployment>
+    </platform> 
+
+    <platform name="iPhone-x86">
+        <applicationDeployment>
+            <nativeLibrary>libDeferSystemGestures.a</nativeLibrary>
+            <initializer>DeferSystemGesturesInitializer</initializer>
+            <finalizer>DeferSystemGesturesFinalizer</finalizer>
+        </applicationDeployment>
+    </platform>
+
+    <platform name="default">
+        <applicationDeployment/>
+    </platform>
+  </platforms>
+</extension>
