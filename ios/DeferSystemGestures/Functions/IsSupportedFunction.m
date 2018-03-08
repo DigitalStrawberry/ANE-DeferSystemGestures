@@ -26,14 +26,10 @@
 #import "DeferSystemGestures.h"
 
 FREObject dsg_isSupported( FREContext context, void* functionData, uint32_t argc, FREObject argv[] ) {
-    FREObject result = nil;
     BOOL iOS11Plus = [[[UIDevice currentDevice] systemVersion] floatValue] >= 11.0;
-    if(iOS11Plus)
-    {
-        FRENewObjectFromBool(1, &result);
-        return result;
-    }
     
-    FRENewObjectFromBool(0, &result);
+    FREObject result = nil;
+    FRENewObjectFromBool(iOS11Plus ? 1 : 0, &result);
+    
     return result;
 }
